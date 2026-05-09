@@ -19,3 +19,5 @@ def remove_elements(lista):
     if len(lista) > 0:  
         del lista[0]
     return lista
+
+#remove_elements()

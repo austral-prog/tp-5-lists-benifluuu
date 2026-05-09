@@ -16,4 +16,5 @@ def check_lists(lista1, lista2):
         return False
     return lista1[2] == lista2[2]
 
+#check_lists()
     

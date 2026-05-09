@@ -12,6 +12,7 @@ def list_length(lista):
     """
     return len(lista) 
 
+ #list_length()
     
     
     

@@ -19,3 +19,5 @@ def list_of_lists(lista_de_listas):
     lista_de_listas[2] = lista_de_listas[2][-2::]
 
     return lista_de_listas
+
+#list_of_lists()

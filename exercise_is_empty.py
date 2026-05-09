@@ -15,3 +15,4 @@ def is_empty(lista):
     else:
         return False 
     
+#is_empty()

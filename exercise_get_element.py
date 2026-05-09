@@ -19,3 +19,4 @@ def get_element(lista, indice):
     else:
         return None
 
+#get_element()

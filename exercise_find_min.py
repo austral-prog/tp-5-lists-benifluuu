@@ -15,3 +15,5 @@ def find_min(lista):
         return None 
     else:
         return min(lista)
+
+#find_min()

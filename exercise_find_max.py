@@ -15,3 +15,5 @@ def find_max(lista):
         return None
     else:
         return max(lista)
+
+#find_max()
