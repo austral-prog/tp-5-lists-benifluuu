@@ -1,23 +1,22 @@
-# Ejercicio 12: Manipular lista de listas
-
-def list_of_lists(lista_de_listas):
+def list_of_lists(lista):
     """
-    Modifica una lista de 3 listas internas:
-    - Primera lista: solo los primeros 2 elementos
-    - Segunda lista: elementos entre el segundo y cuarto
-    - Tercera lista: solo los últimos 2 elementos
-
-    Args:
-        lista_de_listas: Una lista que contiene 3 listas
-
-    Returns:
-        La lista de listas modificada según las reglas
+    Recibe una lista con exactamente 3 listas internas y recorta cada una
+    según las reglas de slicing estipuladas. Retorna la lista modificada.
+    
+    Parámetros:
+    lista (list): Una lista que contiene 3 sublistas.
+    
+    Retorna:
+    list: La lista con sus sublistas recortadas de forma segura.
     """
-
-    lista_de_listas[0] = lista_de_listas[1][0:2:]
-    lista_de_listas[1] = lista_de_listas[1][1:4:]
-    lista_de_listas[2] = lista_de_listas[2][-2::]
-
-    return lista_de_listas
-
-#list_of_lists()
+    # 1. Recortar la primera sublista (índices 0 y 1)
+    sublista1_recortada = lista[0][:2]
+    
+    # 2. Recortar la segunda sublista (índices 1 al 3 inclusive)
+    sublista2_recortada = lista[1][1:4]
+    
+    # 3. Recortar la tercera sublista (los últimos 2 elementos)
+    sublista3_recortada = lista[2][-2:]
+    
+    # 4. Construimos y retornamos la nueva estructura unificada
+    return [sublista1_recortada, sublista2_recortada, sublista3_recortada]

@@ -1,18 +1,13 @@
-# Ejercicio 9: Verificar si una lista está vacía
-
 def is_empty(lista):
     """
     Determina si una lista está vacía.
 
-    Args:
-        lista: Una lista de elementos
+    Parámetros:
+    lista (list): Una lista de elementos.
 
-    Returns:
-        True si la lista está vacía, False en caso contrario
+    Retorna:
+    bool: True si la lista está vacía, False en caso contrario.
     """
-    if lista == []:
-        return True
-    else:
-        return False 
-    
-#is_empty()
+    # Retornamos directamente el resultado de la comparación lógica.
+    # Si la lista no tiene elementos, la igualdad dará True; si tiene algo, dará False.
+    return lista == []

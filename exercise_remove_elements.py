@@ -1,23 +1,25 @@
-# Ejercicio 4: Remover elementos en posiciones específicas
-
 def remove_elements(lista):
     """
-    Remueve el primer, quinto y sexto elemento de la lista.
-    La función debe funcionar con listas de cualquier tamaño.
-
-    Args:
-        lista: Una lista de elementos
-
-    Returns:
-        La lista después de remover los elementos indicados
+    Remueve el primer elemento (índice 0), el quinto (índice 4) y el sexto (índice 5)
+    de forma segura, soportando listas de cualquier tamaño.
+    
+    Parámetros:
+    lista (list): La lista original.
+    
+    Retorna:
+    list: La lista con las eliminaciones aplicadas.
     """
-
-    if len(lista) > 5:   
-        del lista[5]
-    if len(lista) > 4:  
-        del lista[4]
-    if len(lista) > 0:  
-        del lista[0]
+    
+    # 1. Evaluamos el sexto elemento (índice 5)
+    if len(lista) > 5:
+        lista.pop(5)
+        
+    # 2. Evaluamos el quinto elemento (índice 4)
+    if len(lista) > 4:
+        lista.pop(4)
+        
+    # 3. Evaluamos el primer elemento (índice 0)
+    if len(lista) > 0:
+        lista.pop(0)
+        
     return lista
-
-#remove_elements()
